@@ -1,0 +1,98 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+            "patterns": [
+              "Hello",
+              "How are you",
+              "are you there?",
+              "Hi",
+              "Good Morning"
+            ],
+            "responses": [
+        "Hello :-) I'm Aimad, I'm here to help you find the best car for yourself. based on your budget | Cheap | Affordable | Miderange | Premium | ?"
+            ]
+          },
+    {
+      "tag": "cheap",
+            "patterns": [
+              "what is the best cheap car for me"
+            ],
+      
+            "responses": [
+              "- Essence : clio classique model 2002 | Dacia logan model 2005 | peugeot 206 model 1999 - Diesel : Renault R19 model 1993 | Mercedes Benz 190 model 1990 | peugeot 407 model 2005."
+        
+            ]
+      },
+      
+      {
+      "tag": "affordable",
+            "patterns": [
+              "what is the best affordable car for me"
+            ],
+      
+            "responses": [
+              "- Essence : Ford Fiesta model 2012 | Renault Symbole model 2011 | peugeot 206  plus model 2012 - Diesel : Dacia logan model 2012 | peugeot 207 model 2010 | Renault Kango model 2007."
+        
+            ]
+      },
+      {
+        "tag": "miderange",
+              "patterns": [
+                "what is the best miderange car for me"
+              ],
+        
+              "responses": [
+                "- Essence : Toyota corola model 2014 | Renault Clio4 model 2015 | peugeot 301 model 2012 - Diesel : Dacia logan model 2015 | peugeot 206cplus model 2013 | Ford Fiesta 2015."
+          
+              ]
+        },
+        {
+          "tag": "premium",
+                "patterns": [
+                  "what is the best premium car for me"
+                ],
+          
+                "responses": [
+                  "- Essence : Dacia Sandero Stepway model 2018 | Toyota Yaris model 2011 | Huyndai Accent model 2016 - Diesel : Seat Leao model 2015 | Ford Focus model 2012 | Renault Kango model 2017."
+            
+                ]
+          },
+          {
+            "tag": "hybrid",
+                  "patterns": [
+                    "what is the best hybprid car for me"
+                  ],
+            
+                  "responses": [
+                    "- Toyota is the leader of hybrid cars in morocco so our first choice is Toyota Yaris and Corolla , our seconde choice is renault capture and the last one is hyndai accent"
+              
+                  ]
+            },
+            {
+              "tag": "electric",
+                    "patterns": [
+                      "what is the best electric car for me"
+                    ],
+              
+                    "responses": [
+                      "Tesla is the best electric car in the world now but its cost more than 400 000 Dhs, for small budget you can start with renault capture battry last for 140km , there is also toyota yaris battry last for 200km "
+                
+                    ]
+              },
+              {
+                "tag": "SUV-4x4",
+                      "patterns": [
+                        "what is the best SUV car for me",
+                        "what is the best 4x4 car for me"
+                      ],
+                
+                      "responses": [
+                        "Best suv quality/price is Seat Ateca or Scoda Kodiac , for premium quality you can choice any germany car, for cheap one there is the famous dacia duster"
+                  
+                      ]
+                }
+      
+        
+  ]
+}
