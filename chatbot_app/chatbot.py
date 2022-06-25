@@ -28,7 +28,7 @@ def activate(inp_que):
     model.load_state_dict(model_state)
     model.eval()
 
-    bot_name = "Sam"
+    bot_name = "Tomobilty"
     print("Let's chat! (type 'quit' to exit)")
     while True:
         # sentence = "do you use credit cards?"

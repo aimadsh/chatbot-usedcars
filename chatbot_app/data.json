@@ -10,58 +10,591 @@
               "Good Morning"
             ],
             "responses": [
-        "Hello :-) I'm Aimad, I'm here to help you find the best car for yourself. based on your budget | Cheap | Affordable | Miderange | Premium | ?"
+        "Hello, I'm Tomobilty, I'm here to help you to find your best car basing on your budget and type of fuel."
             ]
           },
+          
     {
-      "tag": "cheap",
+      "tag": "Fuel",
             "patterns": [
-              "what is the best cheap car for me"
+              "what is the best car for me?",
+              "i need a car",
+              "i need car"
+              
             ],
       
             "responses": [
-              "- Essence : clio classique model 2002 | Dacia logan model 2005 | peugeot 206 model 1999 - Diesel : Renault R19 model 1993 | Mercedes Benz 190 model 1990 | peugeot 407 model 2005."
+              "Essence | Diesel | Electric | Hybrid"
         
-            ]
-      },
-      
-      {
-      "tag": "affordable",
-            "patterns": [
-              "what is the best affordable car for me"
             ],
-      
-            "responses": [
-              "- Essence : Ford Fiesta model 2012 | Renault Symbole model 2011 | peugeot 206  plus model 2012 - Diesel : Dacia logan model 2012 | peugeot 207 model 2010 | Renault Kango model 2007."
-        
-            ]
+            "context":["Essence","Diesel","Hybrid","Electric"]
       },
+      
       {
-        "tag": "miderange",
+        "tag": "Essence",
               "patterns": [
-                "what is the best miderange car for me"
+                "Essence",
+                "essance"
               ],
         
               "responses": [
-                "- Essence : Toyota corola model 2014 | Renault Clio4 model 2015 | peugeot 301 model 2012 - Diesel : Dacia logan model 2015 | peugeot 206cplus model 2013 | Ford Fiesta 2015."
+                "what is your budget for essence car's"
+                
           
-              ]
+              ],
+              "context":[""]
         },
         {
-          "tag": "premium",
+          "tag": "30 000 Dhs",
                 "patterns": [
-                  "what is the best premium car for me"
+                  "30000 dhs",
+                  "30 000",
+                  "30000",
+                  "30"
                 ],
           
                 "responses": [
-                  "- Essence : Dacia Sandero Stepway model 2018 | Toyota Yaris model 2011 | Huyndai Accent model 2016 - Diesel : Seat Leao model 2015 | Ford Focus model 2012 | Renault Kango model 2017."
+                  "Essence : Renault Clio Classique model 2002 | Dacia logan model 2005 | peugeot 206 model 1999"
             
-                ]
+                ],
+                "context":["Essence"]
           },
           {
-            "tag": "hybrid",
+            "tag": "Renault Clio Classique 2002",
                   "patterns": [
-                    "what is the best hybprid car for me"
+                    "clio clasique 2002",
+                    "renault clio classique 2002",
+                    "Renault Clio Classique",
+                    "Clio Classique",
+                    "classique clio"
+                  ],
+            
+                  "responses": [
+                    "this is a nice classique car, with this price you will get at least model of 2002 with good state, with an approximitly 4000 Dhs you can get exta accesories like : clim , bleuthoot and new tires "
+              
+                  ],
+                  "context":[""]
+            },
+            {
+              "tag": "Dacia logan 2005",
+                  "patterns": [
+                    "dacia logan 2005",
+                    "Dacia Logan model 2005",
+                    "dacia logan model 2005",
+                    "Logan 2005",
+                    "logan dacia 2005"
+                  ],
+            
+                  "responses": [
+                    "this is a famous car, known for low gas fees, easy to repair (car parts)"
+              
+                  ],
+                  "context":[""]
+            },
+
+            {
+              "tag": "peugeot 206 1999",
+                  "patterns": [
+                    "peugeot 206 1999",
+                    "Peugeot 206",
+                    "206 model 1999",
+                    "206"
+                  ],
+            
+                  "responses": [
+                    "this is a famous car, known for low gas fees, easy to repair (car parts)"
+              
+                  ],
+                  "context":[""]
+            },
+
+            {
+              "tag": "60 000 dhs",
+                    "patterns": [
+                      "60000 dhs",
+                      "60 000 dhs",
+                      "60 000 Dhs",
+                      "6"
+                    ],
+              
+                    "responses": [
+                      "Essence : Ford fiesta model 2012 | peugeot 206 plus model 2012 | Renault Symbole Model 2011"
+                
+                    ],
+                    "context":["Essence"]
+              },
+              {
+                "tag": "Ford fiesta model 2012",
+                      "patterns": [
+                        "Ford fiesta model 2012",
+                        "Fiesta ford model 2012",
+                        "ford fiesta model 2012",
+                        "fiesta ford 2012",
+                        "ford fiesta 2012",
+                        "fiesta 2012",
+                        "Fiesta 2012"
+                      ],
+                
+                      "responses": [
+                        "this is a nice classique car, with this price you will get at least model of 2002 with good state, with an approximitly 4000 Dhs you can get exta accesories like : clim , bleuthoot and new tires "
+                  
+                      ],
+                      "context":[""]
+                },
+                {
+                  "tag": "Peugeot 206 plus model 2012",
+                      "patterns": [
+                        "peugeot 206 plus model 2012",
+                        "206 plus peugeot model 2012",
+                        "Peugeot 206 plus model 2012",
+                        "206 plus 2012",
+                        "peugeot 206 plus"
+                      ],
+                
+                      "responses": [
+                        "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                  
+                      ],
+                      "context":[""]
+                },
+          
+                {
+                  "tag": "Renault symbole model 2011",
+                      "patterns": [
+                        "Renault symbole model 2011",
+                        "symbole model 2011",
+                        "renault symbole modle 2011",
+                        "Symbol model 2011",
+                        "renault symbole",
+                        "symbole"
+                      ],
+                
+                      "responses": [
+                        "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                  
+                      ],
+                      "context":[""]
+                },
+                {
+                  "tag": "90 000 dhs",
+                        "patterns": [
+                          "90000 dhs",
+                          "80000 dhs",
+                          "80 000 dhs",
+                          "90 000 dhs",
+                          "9"
+                        ],
+                  
+                        "responses": [
+                          "Essence : peugeot 301 model 2016 | Toyota corola model 2014 | Renault clio 4 model 2015"
+                    
+                        ],
+                        "context":["Essence"]
+                  },
+                  {
+                    "tag": "peugeot 301 model 2016",
+                          "patterns": [
+                            "peugeot 301 model 2016",
+                            "301 peugeot model 2016",
+                            "Peugeot 301 model 2016",
+                            "301 peugeot 2016",
+                            "301"
+                          ],
+                    
+                          "responses": [
+                            "this is a nice classique car, with this price you will get at least model of 2002 with good state, with an approximitly 4000 Dhs you can get exta accesories like : clim , bleuthoot and new tires "
+                      
+                          ],
+                          "context":[""]
+                    },
+                    {
+                      "tag": "Toyota corola model 2014",
+                          "patterns": [
+                            "Toyota corola model 2014",
+                            "Corola toyota model 2014",
+                            "toyota corola model 2014",
+                            "corola toyota model 2014",
+                            "Toyota corola 2014",
+                            "corola toyota 2014",
+                            "corola 2014",
+                            "Corola 2014"
+                          ],
+                    
+                          "responses": [
+                            "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                      
+                          ],
+                          "context":[""]
+                    },
+              
+                    {
+                      "tag": "Renault clio 4 model 2015",
+                          "patterns": [
+                            "Renault clio 4 model 2015",
+                            "clio 4 model 2015",
+                            "renault clio 4 2015",
+                            "Clio 4 2015",
+                            "renault clio 4 model 2015",
+                            "clio4",
+                            "clio 4"
+                          ],
+                    
+                          "responses": [
+                            "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                      
+                          ],
+                          "context":[""]
+                    },
+                    {
+                      "tag": "120 000 dhs",
+                            "patterns": [
+                              "120 000 dhs",
+                              "120 000",
+                              "12",
+                              "120000",
+                              "120 000",
+                              "110 000 dhs"
+                            ],
+                      
+                            "responses": [
+                              "Essence : Dacia sandero stepway model 2018 | Toyata Yaris model 2018 | Hyundai Accent model 2016"
+                        
+                            ],
+                            "context":["Essence"]
+                      },
+                      {
+                        "tag": "Dacia sandero stepway model 2018",
+                              "patterns": [
+                                "Dacia sandero stepway model 2018",
+                                "sandero stepway 2018",
+                                "stepway 2018",
+                                "Stepway 2018"
+                              ],
+                        
+                              "responses": [
+                                "this is a nice classique car, with this price you will get at least model of 2002 with good state, with an approximitly 4000 Dhs you can get exta accesories like : clim , bleuthoot and new tires "
+                          
+                              ],
+                              "context":[""]
+                        },
+                        {
+                          "tag": "Toyata Yaris model 2018",
+                              "patterns": [
+                                "Toyata Yaris model 2018",
+                                "toyata Yaris model 2018",
+                                "Yaris 2018",
+                                "yaris 2018"
+                              ],
+                        
+                              "responses": [
+                                "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                          
+                              ],
+                              "context":[""]
+                        },
+                  
+                        {
+                          "tag": "Hyundai Accent model 2016",
+                              "patterns": [
+                                "hyundai Accent model 2016",
+                                "Accent model 2016",
+                                "Hyundai Accent model 2016",
+                                "accent model 2016",
+                                "Accent 2016"
+                              ],
+                        
+                              "responses": [
+                                "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                          
+                              ],
+                              "context":[""]
+                        },
+            {
+              "tag": "Diesel",
+                    "patterns": [
+                      "diesel",
+                      "mazout"
+                    ],
+              
+                    "responses": [
+                      "what is your budget for diesel car's"
+                
+                    ],
+                    "context":["Fuel"]
+              },
+              {
+                "tag": "35 000 Dhs",
+                      "patterns": [
+                        "35000 dhs",
+                        "35 000 Dhs",
+                        "35 000",
+                        "35000",
+                        "25000 dhs",
+                        "25 000 dhs"
+                      ],
+                
+                      "responses": [
+                        "Diesel : Renault R19 model 1993 | Mercedes Benz 190 model 1990 | Peugeot 407 model 2005"
+                  
+                      ],
+                      "context":["Diesel"]
+                },
+                {
+                  "tag": "Renault R19 model 1993",
+                        "patterns": [
+                          "Renault R19 model 1993",
+                          "renault r19 1993",
+                          "r19",
+                          "R19",
+                          "r19 1993"
+                        ],
+                  
+                        "responses": [
+                          "this is a nice classique car, with this price you will get at least model of 2002 with good state, with an approximitly 4000 Dhs you can get exta accesories like : clim , bleuthoot and new tires "
+                    
+                        ],
+                        "context":[""]
+                  },
+                  {
+                    "tag": "Mercedes Benz 190 model 1990",
+                        "patterns": [
+                          "Mercedes Benz 190 model 1990",
+                          "mercedes benz 190",
+                          "benz 190",
+                          "mercedes 190",
+                          "mercedes 190 model 1990"
+                        ],
+                  
+                        "responses": [
+                          "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                    
+                        ],
+                        "context":[""]
+                  },
+      
+                  {
+                    "tag": "Peugeot 407 model 2005",
+                        "patterns": [
+                          "Peugeot 407 model 2005",
+                          "Peugeot 407",
+                          "407 model 2005",
+                          "peugeot 407"
+                        ],
+                  
+                        "responses": [
+                          "this is a famous car, known for low gas fees, easy to repair (car parts)"
+                    
+                        ],
+                        "context":[""]
+                  },
+      
+              {
+                "tag": "65 000 Dhs",
+                      "patterns": [
+                        "65 000 Dhs Diesel",
+                        "65000 dhs",
+                        "65 000",
+                        "65000",
+                        "6,5",
+                        "55000",
+                        "55 000",
+                        "55 000 dhs"
+                      ],
+                
+                      "responses": [
+                        "Diesel : Dacia logan model 2012 | Peugeot 207 model 2010  | Renault kango model 2008"
+                  
+                      ],
+                      "context":["Diesel"]
+                },
+                {
+                  "tag": "Dacia logan 2012",
+                        "patterns": [
+                          "Dacia logan 2012",
+                          "logan 2012"
+                        ],
+                  
+                        "responses": [
+                          "Robust car , you won't find any better for this budget, but be careful annual taxe cost 1500 Dhs"
+                    
+                        ],
+                        "context":["Diesel"]
+                  },
+                  {
+                    "tag": "Peugeot 207 model 2010",
+                        "patterns": [
+                          "Peugeot 207 model 2010",
+                          "207 model 2010",
+                          "Peugeot 207 ",
+                          "207"
+                        ],
+                  
+                        "responses": [
+                          "this is good car "
+                    
+                        ],
+                        "context":[""]
+                  },
+
+                  {
+                    "tag": "Renault kango model 2008",
+                        "patterns": [
+                          "Renault kango model 2007",
+                          "kango 2007",
+                          "kango dci",
+                          "kango d60"
+                        ],
+                  
+                        "responses": [
+                          "this is good car "
+                    
+                        ],
+                        "context":[""]
+                  },
+
+                  {
+                    "tag": "95 000 Dhs",
+                          "patterns": [
+                            "95 000 Dhs Diesel",
+                        "95000 dhs",
+                        "95 000",
+                        "95000",
+                        "9,5",
+                        "85000",
+                        "85 000",
+                        "85 000 dhs"
+                          ],
+                    
+                          "responses": [
+                            "Diesel : Ford Fiesta model 2015 | Peugeot 206 plus model 2013  | Dacia logan model 2015"
+                      
+                          ],
+                          "context":["Diesel"]
+                    },
+                    {
+                      "tag": "Ford Fiesta model 2015",
+                            "patterns": [
+                              "Ford Fiesta model 2015",
+                              "Fiesta 2015",
+                              "Ford Fiesta 2015"
+                            ],
+                      
+                            "responses": [
+                              "Robust car , you won't find any better for this budget, but be careful annual taxe cost 1500 Dhs"
+                        
+                            ],
+                            "context":["Diesel"]
+                      },
+                      {
+                        "tag": "Peugeot 206 plus model 2013",
+                            "patterns": [
+                              "Peugeot 206 plus model 2013",
+                              "Peugeot 206 plus 2013",
+                              "206 plus model 2013",
+                              "206 plus 2013"
+                            ],
+                      
+                            "responses": [
+                              "this is good car "
+                        
+                            ],
+                            "context":[""]
+                      },
+    
+                      {
+                        "tag": "Dacia logan model 2015",
+                            "patterns": [
+                              "Dacia logan model 2015",
+                              "Dacia logan 2015",
+                              "logan model 2015",
+                              "logan 2015"
+                            ],
+                      
+                            "responses": [
+                              "this is good car "
+                        
+                            ],
+                            "context":[""]
+                      },
+
+                      {
+                        "tag": "125 000 Dhs",
+                              "patterns": [
+                                "125 000 Dhs Diesel",
+                            "125000 dhs",
+                            "125 000",
+                            "125000",
+                            "12,5",
+                            "115000",
+                            "115 000",
+                            "115 000 dhs"
+                              ],
+                        
+                              "responses": [
+                                "Diesel : Seat Leon Tdi model 2015 | Ford Focus model 2012  | Renault Kango 2017"
+                          
+                              ],
+                              "context":["Diesel"]
+                        },
+                        {
+                          "tag": "Seat Leon Tdi model 2015",
+                                "patterns": [
+                                  "Seat Leon Tdi model 2015",
+                                  "Seat Leon model 2015",
+                                  "seat leon tdi model 2015",
+                                  "seat leon 2015",
+                                  "leon 2015",
+                                  "leon tdi 2015"
+                                ],
+                          
+                                "responses": [
+                                  "Robust car , you won't find any better for this budget, but be careful annual taxe cost 1500 Dhs"
+                            
+                                ],
+                                "context":["125 000 Dhs"]
+                          },
+                          {
+                            "tag": "Ford Focus model 2012",
+                                "patterns": [
+                                  "Ford Focus model 2012",
+                                  "ford focus model 2012",
+                                  "ford focus 2012",
+                                  "focus 2012",
+                                  "Focus 2012",
+                                  "206 plus 2013"
+                                ],
+                          
+                                "responses": [
+                                  "this is good car "
+                            
+                                ],
+                                "context":["125 000 Dhs"]
+                          },
+        
+                          {
+                            "tag": "Renault Kango 2017",
+                                "patterns": [
+                                  "Renault Kango 2017",
+                                  "renault kango 2017",
+                                  "kango 2017",
+                                  "bagra"
+                                ],
+                          
+                                "responses": [
+                                  "this is good car "
+                            
+                                ],
+                                "context":["125 000 Dhs"]
+                          },
+    
+
+
+      
+          {
+            "tag": "Hybrid",
+                  "patterns": [
+                    "Hybrid",
+                    "hybrid"
                   ],
             
                   "responses": [
@@ -72,7 +605,9 @@
             {
               "tag": "electric",
                     "patterns": [
-                      "what is the best electric car for me"
+                      "electric",
+                      "electrical",
+                      "electr"
                     ],
               
                     "responses": [
@@ -81,17 +616,31 @@
                     ]
               },
               {
-                "tag": "SUV-4x4",
+                "tag": "SUV",
                       "patterns": [
-                        "what is the best SUV car for me",
-                        "what is the best 4x4 car for me"
+                        "SUV",
+                        "suv",
+                        "Suv"
                       ],
                 
                       "responses": [
                         "Best suv quality/price is Seat Ateca or Scoda Kodiac , for premium quality you can choice any germany car, for cheap one there is the famous dacia duster"
                   
                       ]
-                }
+                },
+                {
+                  "tag": "4x4",
+                        "patterns": [
+                          "4x4",
+                          "4X4"
+                          
+                        ],
+                  
+                        "responses": [
+                          "Best 4x4 quality/price is Seat Ateca & Scoda Kodiac its start with 180 000 dhs depend of model , for premium quality you can choice any germany car like Audi Q5,BMW X6, for cheap one there is the famous dacia duster"
+                    
+                        ]
+                  }
       
         
   ]
